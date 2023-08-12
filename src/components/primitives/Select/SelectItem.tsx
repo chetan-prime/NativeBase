@@ -19,7 +19,7 @@ export const Item = (
   if (useHasResponsiveProps({ ...props, isDisabled, label, value })) {
     return null;
   }
-  if (Platform.OS !== 'web') {
+  if (Platform.OS !== 'web_disabled') {
     const isSelected = selectedValue === value;
 
     return (
