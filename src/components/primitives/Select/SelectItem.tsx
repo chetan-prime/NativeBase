@@ -19,7 +19,7 @@ export const Item = (
   if (useHasResponsiveProps({ ...props, isDisabled, label, value })) {
     return null;
   }
-  if (Platform.OS !== 'web') {
+  //if (Platform.OS !== 'web') {
     const isSelected = selectedValue === value;
 
     return (
@@ -38,13 +38,13 @@ export const Item = (
         {label}
       </Actionsheet.Item>
     );
-  } else {
+  /*} else {
     return (
       <option ref={ref} value={value} disabled={isDisabled}>
         {label}
       </option>
     );
-  }
+  }*/
 };
 
 export default memo(forwardRef(Item));

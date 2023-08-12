@@ -168,7 +168,7 @@ const Select = (
     />
   );
 
-  return Platform.OS === 'web' ? (
+  return Platform.OS === 'windows' ? (
     <Box>
       {/* <Box w="100%" h="100%" position="absolute" opacity="0" zIndex={1}> */}
       <select
